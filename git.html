@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SRE Lab Friday - Git</title>
+
+		<meta name="description" content="Innovate, Automate, Elevate">
+		<meta name="author" content="AT">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			ul span,
+ol span {
+	color: #a6e22e;
+}
+
+li span:first-of-type {
+    color:dodgerblue;
+}
+
+strong {
+	color:dodgerblue;
+}
+.blue {
+    color:dodgerblue;
+}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-auto-animate>
+					<h1 data-id="code-title">SRE Lab Friday</h1>
+					<p>
+						<small>Innovate, Automate, Elevate</small>
+					</p>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						---
+						title: Git
+						author: AT
+						date: "2024-07-19"
+						---
+					</code></pre>
+				</section>
+				<section>
+					<section>
+						<h1>Git</h1>
+					</section>
+					<section>
+						<h2>What is Git?</h2>
+						<div style="text-align: left;">
+						<p>Git is a distributed version control system that helps track changes in source code during software development.</p>
+						<ul>
+							<span>Key Features</span>
+							<li>Distributed version control</li>
+							<li>Branching and merging</li>
+							<li>Lightweight and fast</li>
+						</ul></div>
+					</section>
+					<section>
+						<h2>Why Use Git?</h2>
+						<ul>
+							<li><span>Collaboration:</span> Work with multiple people on the same project.</li>
+							<li><span>Version History:</span> Keep track of every change made to the codebase.</li>
+							<li><span>Backup:</span> Your code is backed up across different repositories.</li>
+							<li><span>Experimentation:</span> Create branches to try new features without affecting the main codebase.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Key Concepts</h2>
+						<ul>
+							<li><span>Repository:</span> A storage location for your code and version history.</li>
+							<li><span>Commit:</span> A snapshot of your code at a particular point in time.</li>
+							<li><span>Branch:</span> A separate line of development.</li>
+							<li><span>Merge:</span> Combining changes from different branches.</li>
+							<li><span>Clone:</span> Copying a repository from a server to your local machine.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Git Workflow</h2>
+						<ol>
+							<span>Basic Workflow:</span>
+							<li>Clone the repository.</li>
+							<li>Create a new branch.</li>
+							<li>Make changes and commit them.</li>
+							<li>Push the changes to the remote repository.</li>
+							<li>Create a pull request for code review.</li>
+							<li>Merge the pull request after review.</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Git Commands</h2>
+						<ul>
+							<span>Common Commands:</span>
+							<li><span>git init:</span> Initialize a new repository.</li>
+							<li><span>git clone [url]:</span> Clone a repository.</li>
+							<li><span>git status:</span> Check the status of your working directory.</li>
+							<li><span>git add [file]:</span> Stage changes for the next commit.</li>
+							<li><span>git commit -m "[message]"</span> Commit changes with a message.</li>
+							<li><span>git push:</span> Push changes to the remote repository.</li>
+							<li><span>git pull:</span> Fetch and merge changes from the remote repository.</li>
+							<li><span>git branch:</span> List, create, or delete branches.</li>
+							<li><span>git merge [branch]:</span> Merge a branch into your current branch.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Branching and Merging</h2>
+						<ul>
+							<span>Branching:</span>
+							<li>Isolate your work.</li>
+							<li>Create feature branches.</li>
+							<li>Experiment without affecting the main codebase.</li><br >
+							<span>Merging:</span>
+							<li>Combine changes from different branches.</li>
+							<li>Handle conflicts.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Collaborative Workflow</h2>
+						<ul>
+							<span>Using GitHub/GitLab:</span>
+							<li>Fork a repository.</li>
+							<li>Create a feature branch.</li>
+							<li>Make changes and push to your fork.</li>
+							<li>Open a pull request.</li>
+							<li>Review and merge changes.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Handling Merge Conflicts</h2>
+						<ul>
+							<span>What is a Merge Conflict?</span>
+							<li>Occurs when changes in different branches conflict.</li><br >
+							<span>Resolving Conflicts:</span>
+							<li>Identify the conflict.</li>
+							<li>Edit the conflicting files.</li>
+							<li>Commit the resolved changes.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Advanced Git Features</h2>
+						<ul>
+							<li><span>Stashing:</span> Save changes temporarily.</li>
+							<code class="hljs">&gt git stash</code><br >
+							<li><span>Rebasing:</span> Reapply commits on top of another base tip.</li>
+							<code class="hljs">&gt git rebase</code><br >
+							<li><span>Cherry-picking:</span> Apply changes from specific commits.</li>
+							<code class="hljs">&gt git cherry-pick</code><br >
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Quick Start</h2>
+					</section>
+					<section>
+						<h2>Setup</h2>
+						<ul>
+							<li><span>Windows:</span></li>
+							<code class="hljs">&gt winget install Git.git</code><br />
+							<li><span>Ubuntu:</span></li>
+							<code class="hljs">&gt sudo apt install git</code>
+						</ul>
+					</section>
+					<section>
+						<h2>Create a new repository</h2>
+						<p class="blue">Create a new directory, open it and perform a</p>
+						<ul><code class="hljs">&gt git init</code></ul>
+						<p>to create a new git repository</p>
+					</section>
+					<section>
+						<h2>Checkout a repository</h2>
+						<p class="blue">Create a working copy of local repository
+						<ul><code class="hljs r-fit-text">&gt git clone https://github.com/andyted/sre-labfriday.git</code></ul>
+						</p>
+					</section>
+					<section>
+						<h2>Workflow</h2>
+						<p>
+							Your local repository consists of three "trees" maintained by git.
+							the first one is your <strong>Working Directory</strong> which holds the actual files.
+							the second one is the <strong>Index</strong> which acts as a staging area and
+							finally the <strong>HEAD</strong> which points to the last commit you've made.
+						</p>
+						<img src="img/git-trees.png" alt="" />
+					</section>
+					 <section>
+						<h2>Add &amp; Commit</h2>
+						<p>
+							You can propose changes (add it to the <strong>Index</strong>) using<br />
+							<span><code class="hljs r-fit-text">git add &lt;filename&gt;</code></span><br />
+							<span><code class="hljs r-fit-text">git add .</code></span><br />
+							This is the first step in the basic git workflow. To actually commit these changes use<br />
+							<span><code class="hljs r-fit-text">git commit -m "Commit message"</code></span><br />
+							Now the file is committed to the <strong>HEAD</strong>, but not in your remote repository yet.
+						</p>
+					</section>
+				
+					<section>
+						<h2>Pushing Changes</h2>
+						<p>
+							Your changes are now in the <strong>HEAD</strong> of your local working copy. To send those changes to your remote repository, execute <br />
+							<span><code class="hljs r-fit-text">git push origin main</code></span><br />
+							Change <i>main</i> to whatever branch you want to push your changes to.
+							<br /><br />
+							If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with<br />
+							<span><code class="hljs r-fit-text">git remote add origin &lt;server&gt;</code></span><br />
+							Now you are able to push your changes to the selected remote server<br />
+				
+						</p>
+					</section>
+				
+					<section>
+						<h2>Branching</h2>
+						<p>
+							Branches are used to develop features isolated from each other. The <i>main</i> branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the main branch upon completion.
+						</p>
+						<img src="img/git-branches.png" alt="" />
+					</section>
+					<section>
+						<h2>Branching</h2>
+						<p class="r-fit-text">
+							Create a new branch named "feature_x" and switch to it using<br />
+							<span><code class="hljs r-fit-text">git checkout -b feature_x</code></span><br />
+							switch back to main<br />
+							<span><code class="hljs r-fit-text">git checkout main</code></span><br />
+							and delete the branch again<br />
+							<span><code class="hljs r-fit-text">git branch -d feature_x</code></span><br />
+							A branch is <i>not available to others</i> unless you push the branch to your remote repository<br />
+							<span><code class="hljs r-fit-text">git push origin &lt;branch&gt;</code></code>
+						</p>
+					</section>
+					 <section>
+						<h2>Update &amp; Merge</h2>
+						<p>
+							To update your local repository to the newest commit, execute <br />
+							<span><code class="hljs r-fit-text">git pull</code></span><br />
+							in your working directory to <i>fetch</i> and <i>merge</i> remote changes.<br />
+							to merge another branch into your active branch (e.g. main), use<br />
+							<span><code class="hljs r-fit-text">git merge &lt;branch&gt;</code></span><br />
+							in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in <i>conflicts</i>.
+							You are responsible to merge those <i>conflicts</i>
+							manually by editing the files shown by git. After changing, you need to mark them as merged with<br />
+							<span><code class="hljs r-fit-text">git add &lt;filename&gt;</code></span><br />
+							before merging changes, you can also preview them by using<br />
+							<span><code class="hljs r-fit-text">git diff &lt;source_branch&gt; &lt;target_branch&gt;</code></span>
+						</p>
+					</section>
+					 <section>
+						<h2>Tagging</h2>
+						<p>
+							It's recommended to create tags for software releases. this is a known concept, which also exists in SVN. You can create a new tag named <i>1.0.0</i> by executing<br />
+							<span><code class="hljs r-fit-text">git tag 1.0.0 1b2e1d63ff</code></span><br />
+							the <i>1b2e1d63ff</i> stands for the first 10 characters of the commit id you want to reference with your tag. You can get the commit id by looking at the... <br />
+						</p>
+					</section>
+					 <section>
+						<h2>Log</h2>
+						<p>
+							in its simplest form, you can study repository history using..<br />
+							<span><code class="hljs r-fit-text">git log</code></span><br />
+							You can add a lot of parameters to make the log look like what you want. To see only the commits of a certain author:<br />
+							<span><code class="hljs r-fit-text">git log --author=bob</code></span><br />
+							To see a very compressed log where each commit is one line:<br />
+							<span><code class="hljs r-fit-text">git log --pretty=oneline</code></span><br />
+							Or maybe you want to see an ASCII art tree of all the branches, decorated with the names of tags and branches: <br />
+							<span><code class="hljs r-fit-text">git log --graph --oneline --decorate --all</code></span><br />
+							See only which files have changed: <br />
+							<span><code class="hljs r-fit-text">git log --name-status</code></span><br />
+							These are just a few of the possible parameters you can use. See
+							<span><code class="hljs r-fit-text">git log --help</code></span><br />
+						</p>
+					</section>
+					 <section>
+						<h2>Replace local changes</h2>
+						<p>
+							In case you did something wrong, which for sure never happens, you can replace local changes using the command<br />
+							<span><code class="hljs r-fit-text">git checkout -- &lt;filename&gt;</code></span><br />
+							this replaces the changes in your working tree with the last content in <strong>HEAD</strong>. Changes already added to the index, as well as new files, will be kept.
+						</p>
+						<p>
+							If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your local main branch at it like this<br />
+							<span><code class="hljs r-fit-text">git fetch origin</code></span><br />
+							<span><code class="hljs r-fit-text">git reset --hard origin/main</code></span>
+						</p>
+					</section>
+					 <section>
+						<h2>Useful hints</h2>
+						<p>
+							built-in git GUI<br />
+							<span><code class="hljs r-fit-text">gitk</code></span><br />
+							use colorful git output<br />
+							<span><code class="hljs r-fit-text">git config color.ui true</code></span><br />
+							show log on just one line per commit<br />
+							<span><code class="hljs r-fit-text">git config format.pretty oneline</code></span><br />
+							use interactive adding<br />
+							<span><code class="hljs r-fit-text">git add -i</code></span>
+						</p>
+					</section>
+				</section>
+				<section>
+					<h2>Cheatsheet</h2>
+					<p>Get it <a href="content/git-cheat-sheet.pdf" target="_blank">here</a>.</p>
+				</section>
+				<section>
+					<section>
+						<h2>Markdown</h2>
+					</section>
+					<section>
+						<h2>What is Markdown?</h2>
+						<div style="text-align: left;">
+							<p>Markdown is a lightweight markup language for creating formatted text using a plain-text editor.</p>
+							<ul>
+								<span>Key Features</span>
+								<li>Simple syntax</li>
+								<li>Easy to read and write</li>
+								<li>Converts to HTML and other formats</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2 data-id="code-title">Basic Syntax</h2>
+						<pre data-id="code-animation"><code class="hljs markdown" data-trim data-line-numbers>
+							# Header 1
+							## Header 2
+							### Header 3
+
+
+							*italic* or _italic_
+							**bold** or __bold__
+
+
+							- Item 1
+							- Item 2
+							- Item 3
+
+
+							1. Item 1
+							2. Item 2
+							3. Item 3
+						</code></pre>
+					</section>
+					<section>
+						<h2 data-id="code-title">Advanced Syntax</h2>
+						<pre data-id="code-animation"><code class="hljs markdown" data-trim data-line-numbers>
+							[OpenAI](https://www.openai.com)
+
+							![Alt text](url)
+
+							`inline code`
+
+							
+							```
+							code block
+							```
+
+							> This is a blockquote.
+
+							| Header 1 | Header 2 |
+							|----------|----------|
+							| Row 1    | Data     |
+							| Row 2    | Data     |
+						</code></pre>
+					</section>
+					<section>
+						<h2>Markdown in GitHub</h2>
+						<ul>
+							<li><span>README Files:</span> Provide project information and documentation.</li>
+							<li><span>Issues and Pull Requests:</span> Format text for better readability.</li>
+							<li><span>Wikis:</span> Create project wikis using Markdown.</li>
+						</ul>
+					</section>
+				</section>
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
